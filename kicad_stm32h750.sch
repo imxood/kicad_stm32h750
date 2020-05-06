@@ -1,0 +1,220 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32H7:STM32H750VBTx U?
+U 1 1 5EB315EB
+P 4800 3750
+F 0 "U?" H 4800 861 50  0000 C CNN
+F 1 "STM32H750VBTx" H 4800 770 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 4100 1150 50  0001 R CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32h750ib.pdf" H 4800 3750 50  0001 C CNN
+	1    4800 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2750 3800 2750
+$Comp
+L Device:C_Small C?
+U 1 1 5EB42EFF
+P 3250 2600
+F 0 "C?" V 3300 2700 50  0000 C CNN
+F 1 "22p" V 3300 2500 50  0000 C CNN
+F 2 "" H 3250 2600 50  0001 C CNN
+F 3 "~" H 3250 2600 50  0001 C CNN
+	1    3250 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 5EB40DE4
+P 3550 2750
+F 0 "Y?" V 3504 2838 50  0000 L CNN
+F 1 "8MHz" V 3600 2800 50  0000 L CNN
+F 2 "" H 3550 2750 50  0001 C CNN
+F 3 "~" H 3550 2750 50  0001 C CNN
+	1    3550 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 2750 3800 2600
+Wire Wire Line
+	3800 2600 3550 2600
+Wire Wire Line
+	3550 2650 3550 2600
+Connection ~ 3550 2600
+Wire Wire Line
+	3550 2600 3350 2600
+$Comp
+L Device:C_Small C?
+U 1 1 5EB4A64E
+P 3250 2950
+F 0 "C?" V 3300 3050 50  0000 C CNN
+F 1 "22p" V 3300 2850 50  0000 C CNN
+F 2 "" H 3250 2950 50  0001 C CNN
+F 3 "~" H 3250 2950 50  0001 C CNN
+	1    3250 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 2850 3800 2850
+Wire Wire Line
+	3150 2600 3000 2600
+Wire Wire Line
+	3000 2950 3150 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5EB4BC16
+P 2850 2900
+F 0 "#PWR?" H 2850 2650 50  0001 C CNN
+F 1 "GND" H 2855 2727 50  0000 C CNN
+F 2 "" H 2850 2900 50  0001 C CNN
+F 3 "" H 2850 2900 50  0001 C CNN
+	1    2850 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2850 3550 2950
+Wire Wire Line
+	3550 2950 3800 2950
+Wire Wire Line
+	3800 2950 3800 2850
+Wire Wire Line
+	3350 2950 3550 2950
+Connection ~ 3550 2950
+Wire Wire Line
+	3000 2800 3000 2950
+Wire Wire Line
+	3000 2600 3000 2800
+Connection ~ 3000 2800
+Wire Wire Line
+	2850 2900 2850 2800
+Wire Wire Line
+	2850 2800 3000 2800
+Wire Wire Line
+	5700 6250 5800 6250
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 5EB5571A
+P 6050 6250
+F 0 "Y?" V 6000 6100 50  0000 L CNN
+F 1 "32.768KHz" V 6150 5850 50  0000 L CNN
+F 2 "" H 6050 6250 50  0001 C CNN
+F 3 "~" H 6050 6250 50  0001 C CNN
+	1    6050 6250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 6250 5800 6400
+Wire Wire Line
+	5800 6400 6050 6400
+Wire Wire Line
+	6050 6350 6050 6400
+Connection ~ 6050 6400
+Wire Wire Line
+	6050 6400 6300 6400
+$Comp
+L Device:C_Small C?
+U 1 1 5EB55725
+P 6400 6050
+F 0 "C?" V 6450 6150 50  0000 C CNN
+F 1 "10p" V 6450 5950 50  0000 C CNN
+F 2 "" H 6400 6050 50  0001 C CNN
+F 3 "~" H 6400 6050 50  0001 C CNN
+	1    6400 6050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 6150 5800 6150
+Wire Wire Line
+	6600 6050 6500 6050
+$Comp
+L power:GND #PWR?
+U 1 1 5EB5572E
+P 6800 6300
+F 0 "#PWR?" H 6800 6050 50  0001 C CNN
+F 1 "GND" H 6805 6127 50  0000 C CNN
+F 2 "" H 6800 6300 50  0001 C CNN
+F 3 "" H 6800 6300 50  0001 C CNN
+	1    6800 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 6150 6050 6050
+Wire Wire Line
+	6050 6050 5800 6050
+Wire Wire Line
+	5800 6050 5800 6150
+Wire Wire Line
+	6300 6050 6050 6050
+Connection ~ 6050 6050
+Wire Wire Line
+	6600 6200 6600 6050
+Wire Wire Line
+	6600 6400 6600 6200
+Connection ~ 6600 6200
+Wire Wire Line
+	6800 6300 6800 6200
+Wire Wire Line
+	6800 6200 6600 6200
+Wire Wire Line
+	6500 6400 6600 6400
+$Comp
+L Device:C_Small C?
+U 1 1 5EB55714
+P 6400 6400
+F 0 "C?" V 6450 6500 50  0000 C CNN
+F 1 "10p" V 6450 6300 50  0000 C CNN
+F 2 "" H 6400 6400 50  0001 C CNN
+F 3 "~" H 6400 6400 50  0001 C CNN
+	1    6400 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB58F2A
+P 3600 1550
+F 0 "R?" V 3550 1400 50  0000 C CNN
+F 1 "10k" V 3550 1700 50  0000 C CNN
+F 2 "" H 3600 1550 50  0001 C CNN
+F 3 "~" H 3600 1550 50  0001 C CNN
+	1    3600 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 1550 3700 1550
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J?
+U 1 1 5EB60F77
+P 1350 2000
+F 0 "J?" H 1400 3117 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 1400 3026 50  0000 C CNN
+F 2 "" H 1350 2000 50  0001 C CNN
+F 3 "~" H 1350 2000 50  0001 C CNN
+	1    1350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J?
+U 1 1 5EB65892
+P 1350 4400
+F 0 "J?" H 1400 5517 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 1400 5426 50  0000 C CNN
+F 2 "" H 1350 4400 50  0001 C CNN
+F 3 "~" H 1350 4400 50  0001 C CNN
+	1    1350 4400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
